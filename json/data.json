@@ -1,0 +1,29 @@
+{
+    "skills" : [ "PHP" , "MYSQL" , "JavaScript" , "HTML/CSS" , "GIT/GitHub" ],
+    "projects" : [
+        {
+            "titulo" : "Titulo del Projecto1",
+            "Description" : "",
+            "imagen" : "url",
+            "technologies" : [ "HTML" , "CSS" , "JS" ]
+        },
+        {
+            "titulo" : "Titulo del Projecto1",
+            "Description" : "",
+            "imagen" : "url",
+            "technologies" : [ "HTML" , "CSS" , "JS" ]
+        },
+        {
+            "titulo" : "Titulo del Projecto1",
+            "Description" : "",
+            "imagen" : "url",
+            "technologies" : [ "HTML" , "CSS" , "JS" ]
+        },
+        {
+            "titulo" : "Titulo del Projecto1",
+            "Description" : "",
+            "imagen" : "url",
+            "technologies" : [ "HTML" , "CSS" , "JS" ]
+        }
+    ]
+}

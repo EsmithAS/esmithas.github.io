@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Moon Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Moon 2.0 Light'), url('../font/Moon2.0-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Moon Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Moon 2.0 Regular'), url('../font/Moon2.0-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Moon Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Moon 2.0 Bold'), url('../font/Moon2.0-Bold.woff') format('woff');
+}
