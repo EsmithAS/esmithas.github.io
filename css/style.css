@@ -82,6 +82,9 @@ header {
     font-size: 25px;
     padding: 5px 10px;
 }
+#menu .cont-logo button{
+    display: none;
+}
 #menu-item {
     flex: 1 1 50%;
 }
@@ -125,7 +128,7 @@ header {
     align-content: center;
 }
 #perfil img {
-    width: 30vh;
+    width: 200px;
     border-radius: 100%;
     margin-top: 50px;
 }
@@ -133,6 +136,7 @@ header {
     font-size: 2rem;
     letter-spacing: 5px;
     margin: 50px 0 25px;
+    text-align: center;
 }
 
 #perfil a {
@@ -231,7 +235,6 @@ section {
     border-radius: 100%;
 }
 .izquierda h2 {
-    /* background-color: red; */
     margin: 50px 0 10px ;
 }
 .hobbies {
@@ -436,43 +439,32 @@ section {
 
 .cont-work .wor-info {
     transition: .5s;
-    background-color: rgba(27, 34, 38, 0.95);
+    background-color: rgba(27, 34, 38, 1);
     width: 100%;
-    height: 100%;
-    padding: 10px 20px;
+    height: 60%;
+    padding: 10px 5px;
     position: absolute;
     bottom: -100%;
     left: 0%;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 
 }
 .cont-work .wor-info h3 {
     width: 100%;
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: center;
     padding: 10px 0;
     color: var(--white-color);
     font-family: 'Moon Regular';
     border-bottom: 2px solid var(--white-color);
 }
-.cont-work .wor-info p {
-    width: 100%;
-    padding: 15px 0;
-    font-size: 0.8rem;
-    line-height: 25px;
-    color: var(--white-color);
-    font-family: 'Moon Light';
-}
 .cont-work .wor-info .tec-usadas {
     width: 100%;
-    padding: 10px 0;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 .cont-work .wor-info .tec-usadas a {
     padding: 3px 10px;
@@ -484,9 +476,7 @@ section {
     font-size: 0.7rem;
     cursor: default;
 }
-.cont-work .wor-info .tec-usadas button {
-    flex: 0 1 100%;
-    margin: 15px 50px;
+.cont-work .wor-info button {
     padding: 6px 2px;
     font-family: 'Moon Regular';
     cursor: pointer;
@@ -497,7 +487,7 @@ section {
     outline: none;
     transition: .5s;
 }
-.cont-work .wor-info .tec-usadas button:hover {
+.cont-work .wor-info button:hover {
     background-color: rgba(101,129,140,0.95);
     transition: .5s;
 }
@@ -543,14 +533,15 @@ section {
     border-radius: 15px;
     left: 35%;
 }
-.cont-servicios .card-service svg {
-    width: 100px;
-    height: 100px;
+.cont-servicios .card-service img {
+    width: 170px;
+    height: 170px;
     fill: var(--white-color);
 }
 .cont-servicios .card-service p {
     padding: 5px 10px;
     text-align: center;
+    font-size: 1rem;
     color: var(--white-color);
 }
 
@@ -660,4 +651,201 @@ footer p {
     padding: 10px;
     font-size: 15px;
     font-weight: 400;
+}
+
+
+/*MEDIAS QUERY*/
+@media only screen and ( max-width : 300px ){
+    #menu .cont-logo a{
+        font-size: 1.2rem;
+    }
+    .izquierda img{
+        width: 150px;
+    }
+    .hobbie svg {
+        width: 20px;
+        height: 20px;
+    }
+    .hobbie span {
+        font-size: .9rem;
+    }
+    .cont-servicios .card-service p{
+        font-size: .9rem;
+    }
+    .contact h3 {
+        font-size: .9rem;
+    }
+}
+@media only screen and ( max-width : 500px ){
+    #perfil img{
+        width: 150px;
+    }
+    #perfil h1{
+        font-size: 1.5rem;
+    }
+    #perfil h4{
+        font-size: .8rem;
+    }
+    #perfil a{
+        font-size: .8rem;
+    }
+    /*Menu navegación*/
+    #menu {
+        display: block;
+    }
+    #menu .cont-logo {
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu .cont-logo #btnMenu{
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin: 5px 0;
+        background-color: transparent;
+        background-image: url('../svg/menu.svg');
+        background-size: contain;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: .5s;
+    }
+    #menu .cont-logo #btnMenu:hover{
+        transform: rotateZ(90deg);
+    }
+    #menu-item {
+        height: 0;
+        position: relative;
+        transition: .5s;
+        right: -500px;
+    }
+    .bg-menu-res {
+        right: 0 !important;
+        height: 150px !important;
+    }
+    .img-menu {
+        transform: rotateZ(180deg) !important;
+        background-image: url('../svg/menu-x.svg') !important;
+    }
+    #menu-item ul{
+        display: block;
+        text-align: end;
+    }
+    #menu-item ul li{
+        margin: 15px 0;
+    }
+    #menu-item ul li .item-resalt{
+        border: 0;
+        border-radius: 0%;
+    }
+    #menu-item ul li .item-resalt:hover{
+        border-bottom: 1px solid var(--white-color);
+    }
+    /*About*/
+    
+    .izquierda .hobbies{
+        flex-flow: row nowrap;
+    }
+    .izquierda .hobbie {
+        padding: 0 10px;
+    }
+    /*Skills*/
+    
+    .tecnologias{
+        flex-wrap: wrap;
+    }
+    .cont-tecno{
+        /* width: 25%; */
+        flex: 0 0 25%;
+    }
+    .cont-tecno .cont-svg{
+        width: 120px;
+        height: auto;
+    }
+    .cont-tecno p {
+        font-size: .8rem;
+    }
+    /*portfolio*/
+    
+    .portfolio ul li{
+        width: 33.33%;
+    }
+    .portfolio ul a{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .works {
+        margin: 0 0 100px;
+    }
+    .cont-work {
+        flex: 0 1 80% !important;
+        margin: 10px;
+    }
+    /*servicios*/
+    .cont-servicios {
+        flex-direction: column;
+    }
+    .cont-servicios .card-service{
+        flex-direction: column;
+        margin: 35px 0;
+    }
+    .cont-servicios .card-service img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    footer {
+        margin-top: 50px;
+    }
+    footer p {
+        font-size: .8rem;
+    }   
+}
+
+@media only screen and ( max-width : 800px ){
+    .izquierda {
+        margin: 100px 0 50px;
+    }
+    .skills h2{
+        margin: 100px 0 50px;
+    }
+    .portfolio h2{
+        margin: 100px 0 25px;
+    }
+    #menu-item ul li a{
+        font-size: .7rem;
+        
+    }
+    .derecha {
+        padding: 50px 10px 0 10px;
+    }
+    .derecha h2{
+        font-size: 1.7rem;
+    }
+    .derecha p{
+        font-size: .9rem;
+        margin: 25px 0 0;
+    }
+    .cont-work {
+        flex: 0 1 40%;
+        margin: 10px;
+    }
+    .cont-servicios .card-service img{
+        width: 200px;
+        height: 100px;
+    }
+    .cont-servicios .card-service p{
+        font-size: .9rem;
+    }
+    /*Contacto*/
+    .contact form{
+        width: 80%;
+    }
+    .contact form .acerca-ti{
+        width: 100%;
+    }
+    .contact form input{
+        flex: 1 1 100% !important;
+        margin: 5px 0 !important;
+    }
 }

@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Esmith Sánchez</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-font.css">
   <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">-->
@@ -17,6 +17,9 @@
         <a href="#" id="logo">
             E / S
         </a>
+        <button id="btnMenu">
+          <!-- <img src="svg/menu.svg" alt="" id="iconMenu"> -->
+        </button>
       </div>
       <nav id="menu-item">
           <ul>
@@ -77,12 +80,13 @@
           <h2>HOLA!!</h2>
           <h2>BIENVENID@</h2>
           <p>
-            Mi nombre es Esmith Alama Sánchez, me gusta aprender, resolver retos, interactuar con la tecnología, me considero Desarrollador y Diseñador Web & Apps (Android y iOS). 
+            Mi nombre es Esmith Alama Sánchez, soy <strong>Desarrollador Fronted</strong>. Me gusta aprender, mediante cursos virtuales y me fascina la idea de resolver problemas haciendo uso  del anáisis, la programación y sobretodo el diseño web. 
           </p>
           <p>
-            He realizado proyectos a nivel personal como grupal,
-            plasmando mis conocimientos, a través del uso de la 
-            creatividad, lógica y sobre todo código.
+            He realizado proyectos a nivel personal como grupal, plasmando mis conocimientos, a través del código.
+          </p>
+          <p>
+            <strong style="font-style: cursive;">"Permiteme darle un toque de diseño a tus proyectos."</strong>
           </p>
         </div>
     </section>
@@ -124,7 +128,7 @@
           <div class="cont-svg">
             <img src="svg/tec-github.svg" alt="">
           </div>
-          <p>Git / GitHub</p>
+          <p>Git/GitHub</p>
         </div><!--Git / GitHub-->
       </div><!--Cont tecnologías-->
     </section><!--Skills-->
@@ -132,8 +136,8 @@
       <h2>Mi Portafolio</h2>
       <ul>
         <li><a href="#">App</a></li>
-        <li><a href="#">Illustration</a></li>
         <li><a href="#">Web Design</a></li>
+        <li><a href="#">XD</a></li>
       </ul>
 
       <div class="works">
@@ -144,15 +148,43 @@
           </div>
           <div class="wor-info">
             <h3>Proyecto</h3>
-            <p class="wor-descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, itaque.</p>
             <div class="tec-usadas">
               <a>#HTML</a>
               <a>#CSS</a>
               <a>#JS</a>
-              <button>Visualizar</button>
             </div>
+            <button>Visualizar</button>
           </div>
+        </div><!--Work1-->
 
+        <div class="cont-work">
+          <div class="wor-portada">
+            <img src="img/work.jpg" alt="">
+          </div>
+          <div class="wor-info">
+            <h3>Proyecto</h3>
+            <div class="tec-usadas">
+              <a>#HTML</a>
+              <a>#CSS</a>
+              <a>#JS</a>
+            </div>
+            <button>Visualizar</button>
+          </div>
+        </div><!--Work1-->
+
+        <div class="cont-work">
+          <div class="wor-portada">
+            <img src="img/work.jpg" alt="">
+          </div>
+          <div class="wor-info">
+            <h3>Proyecto</h3>
+            <div class="tec-usadas">
+              <a>#HTML</a>
+              <a>#CSS</a>
+              <a>#JS</a>
+            </div>
+            <button>Visualizar</button>
+          </div>
         </div><!--Work1-->
         
 
@@ -162,32 +194,32 @@
     <section class="service" id="Service">
       <div class="cont-servicios">
         <div class="card-service">
-          <svg><use href="svg/icons.svg#github"></use></svg>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img src="svg/ser-code.svg" alt="">
+          <p>Creación de sitios web agradables y responsive.</p>
         </div><!--Servicio1-->
         <div class="card-service">
-          <svg><use href="svg/icons.svg#github"></use></svg>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img src="svg/ser-XD.svg" alt="">
+          <p>Maquetación de diseños en Adobe XD.</p>
         </div><!--Servicio2-->
         <div class="card-service">
-          <svg><use href="svg/icons.svg#github"></use></svg>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img src="svg/ser-db.svg" alt="">
+          <p>Análisis, diseño y creación de Base de datos.</p>
         </div><!--Servicio3-->
       </div>
     </section><!--Servicios-->
 
     <section class="contact" id="Contact">
-        <h2>Contact</h2>
-        <h3>¿Te interesa trabajar juntos? Ponte en contacto es gratis ^^!!</h3>
+        <h2>Charlemos!</h2>
+        <h3>¿Te interesa trabajar juntos? Envia un mensaje, es gratis ^^!!</h3>
         <form action="">
           <div class="acerca-ti">
             <label for="">Acerca de ti</label>
-            <input type="text" name="" id="txtNombres" placeholder="Full name">
-            <input type="text" name="" id="txtEmail" placeholder="@ Email">
+            <input type="text" name="" id="txtNombres" placeholder="Full name" required>
+            <input type="email" name="" id="txtEmail" placeholder="@ Email" required>
           </div>
           <div class="detalle-idea">
             <label for="">Detalla tu idea</label> 
-            <textarea name="" id="txtDetalle" cols="30" rows="7"></textarea>
+            <textarea name="" id="txtDetalle" cols="30" rows="7" required></textarea>
           </div>
           <button>Enviar</button>
         </form>

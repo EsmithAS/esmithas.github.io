@@ -2,6 +2,15 @@ const selector = document.querySelector.bind(document);
 const selectores = document.querySelectorAll.bind(document);
 const ui = new UI();
 
+selector("#btnMenu").addEventListener( 'click' , ()=> {
+    selector("#menu-item").classList.toggle('bg-menu-res');
+    selector("#btnMenu").classList.toggle('img-menu');
+    
+    if(!selector(".redes").classList.contains('redes-black')){
+        selector("#menu").classList.toggle('bg-menu');
+    }
+})
+
 window.onscroll =  () => {
 
     if (window.scrollY > 0) {
@@ -13,7 +22,11 @@ window.onscroll =  () => {
         });
 
     } else {
-        selector("#menu").classList.remove('bg-menu');
+
+        if(!selector("#menu-item").classList.contains('bg-menu-res')){
+            selector("#menu").classList.remove('bg-menu');
+        }
+        
         selector(".redes").classList.remove('redes-black');
 
         ui.forSelector(selectores(".redes svg"),(element)=>{
