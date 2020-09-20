@@ -476,9 +476,9 @@ section {
     font-size: 0.7rem;
     cursor: default;
 }
-.cont-work .wor-info button {
-    padding: 6px 2px;
-    font-family: 'Moon Regular';
+.cont-work .wor-info .btnVisualizar {
+    padding: 4px 2px;
+    text-align: center;
     cursor: pointer;
     color: var(--white-color);
     border-radius: 15px;
@@ -487,7 +487,7 @@ section {
     outline: none;
     transition: .5s;
 }
-.cont-work .wor-info button:hover {
+.cont-work .wor-info .btnVisualizar:hover {
     background-color: rgba(101,129,140,0.95);
     transition: .5s;
 }

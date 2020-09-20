@@ -1,29 +1,54 @@
 {
-    "skills" : [ "PHP" , "MYSQL" , "JavaScript" , "HTML/CSS" , "GIT/GitHub" ],
+    "skills" : [
+        {
+            "title" : "PHP",
+            "svg" : "svg/tec-php.svg"
+        },
+        {
+            "title" : "MYSQL",
+            "svg" : "svg/tec-mysql.svg"
+        },
+        {
+            "title" : "JavaScript",
+            "svg" : "svg/tec-js.svg"
+        },
+        {
+            "title" : "HTML5",
+            "svg" : "svg/tec-html.svg"
+        },
+        {
+            "title" : "CSS3",
+            "svg" : "svg/tec-css.svg"
+        },
+        {
+            "title" : "GIT/GitHub",
+            "svg" : "svg/tec-github.svg"
+        }
+    ],
     "projects" : [
         {
-            "titulo" : "Titulo del Projecto1",
+            "title" : "Projecto 1",
             "Description" : "",
-            "imagen" : "url",
-            "technologies" : [ "HTML" , "CSS" , "JS" ]
+            "imagen" : "img/work.jpg",
+            "tipe" : "web",
+            "technologies" : [ "HTML" , "CSS" , "JS" ],
+            "link" : "www.google.com"
         },
         {
-            "titulo" : "Titulo del Projecto1",
+            "title" : "Projecto 2",
             "Description" : "",
-            "imagen" : "url",
-            "technologies" : [ "HTML" , "CSS" , "JS" ]
+            "imagen" : "img/work.jpg",
+            "tipe" : "web",
+            "technologies" : [ "HTML" , "CSS" , "JS" ],
+            "link" : "www.google.com"
         },
         {
-            "titulo" : "Titulo del Projecto1",
+            "title" : "Projecto 3",
             "Description" : "",
-            "imagen" : "url",
-            "technologies" : [ "HTML" , "CSS" , "JS" ]
-        },
-        {
-            "titulo" : "Titulo del Projecto1",
-            "Description" : "",
-            "imagen" : "url",
-            "technologies" : [ "HTML" , "CSS" , "JS" ]
+            "imagen" : "img/work.jpg",
+            "tipe" : "web",
+            "technologies" : [ "HTML" , "CSS" , "JS" ],
+            "link" : "www.google.com"
         }
     ]
 }

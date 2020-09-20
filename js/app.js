@@ -1,5 +1,6 @@
 const selector = document.querySelector.bind(document);
 const selectores = document.querySelectorAll.bind(document);
+const dt = new Data();
 const ui = new UI();
 
 selector("#btnMenu").addEventListener( 'click' , ()=> {
@@ -34,3 +35,13 @@ window.onscroll =  () => {
         });
     }
 }
+
+
+/* Obteniendo datos json */
+const data = dt.data();
+data.then( dt => {
+
+    ui.insertSkills( dt.skills );
+    ui.insertWorks( dt.projects );
+
+});
