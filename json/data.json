@@ -35,20 +35,20 @@
             "link" : "https://esmithas.github.io/website-tumbes/"
         },
         {
-            "title" : "Tareas",
-            "description" : "Aplicación donde realiza un CRUD de tareas, con js usando LocalStorage",
-            "imagen" : "tareas.png",
-            "tipe" : "web",
-            "technologies" : [ "HTML5" , "CSS" , "JS" ],
-            "link" : "https://esmithas.github.io/Task-JS/"
-        },
-        {
             "title" : "Cotizador de Cryptomonedas",
             "description" : "Aplicacion para cotizar el valor de una cryptomoneda a una moneda, mediante una API.",
             "imagen" : "cotizador.png",
             "tipe" : "web",
             "technologies" : [ "HTML5" , "Bootstrap" , "JS" ],
             "link" : "https://esmithas.github.io/CotizadorCryptomonedas/"
+        },
+        {
+            "title" : "Galeria",
+            "description" : "Aplicación para subir fotos, con funcionalidad para visulizar, subir, editar, eliminar fotos. ( CRUD ).",
+            "imagen" : "galeria.png",
+            "tipe" : "web",
+            "technologies" : [ "HTML5" , "CSS" , "JS" , "PHP" ],
+            "link" : "https://galeriacompartida.000webhostapp.com/"
         }
     ]
 }

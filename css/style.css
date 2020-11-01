@@ -694,6 +694,9 @@ footer p {
     #menu .cont-logo a{
         font-size: 1.2rem;
     }
+    #perfil h1 {
+        margin: 25px 0 15px;
+    }
     .izquierda img{
         width: 150px;
     }
