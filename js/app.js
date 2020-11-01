@@ -45,3 +45,12 @@ data.then( dt => {
     ui.insertWorks( dt.projects );
 
 });
+
+
+/* Enviar email */
+// selector("#formContact").addEventListener( 'submit' , ( e ) => {
+//     e.preventDefault();
+    
+//     dt.sendEmail('formContact');
+
+// } );

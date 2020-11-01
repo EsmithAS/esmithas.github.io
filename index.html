@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-font.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -24,19 +24,19 @@
       </div>
       <nav id="menu-item">
           <ul>
-              <li><a href="#About">About</a></li>
-              <li><a href="#Skills">Skills</a></li>
-              <li><a href="#Portfolio" class="item-resalt">Portfolio</a></li>
-              <li><a href="#Contact">Contact</a></li>
+              <li><a href="#About">Sobre mí</a></li>
+              <li><a href="#Skills">Habilidades</a></li>
+              <li><a href="#Portfolio" class="item-resalt">Portafolio</a></li>
+              <!-- <li><a href="#Contact">Contact</a></li> -->
           </ul>
       </nav>
     </div>
     <div id="perfil">
-        <img src="img/me.jpg" alt="perfil">
+        <!-- <img src="img/me.jpg" alt="perfil"> -->
         <h1>Esmith Sánchez</h1>
         <h4>Developer & Designer</h4>
-        <a href="#">CV</a>
-    </div>
+        <!-- <a href="#">CV</a> -->
+      </div>
     <div class="redes">
       <a href="https://github.com/EsmithAS" target="_blank">
         <svg class="svgRedes">
@@ -53,20 +53,20 @@
   <main>
     <section class="me" id="About">
         <div class="izquierda">
-          <img src="img/me.jpg" alt="" class="foto">
+          <img src="img/perfil.png" alt="" class="foto">
           <h2>Hobbies</h2>
           <div class="hobbies">
             <div class="hobbie">
               <svg>
-                <use href="svg/icons.svg#musica"/>
+                <use href="svg/icons.svg#camara"/>
               </svg>
-              <span>Música</span>
+              <span>Fotografía</span>
             </div>
             <div class="hobbie">
               <svg>
-                <use href="svg/icons.svg#lapiz"/>
+                <use href="svg/icons.svg#videojuego"/>
               </svg>
-              <span>Dibujar</span>
+              <span>Videojuegos</span>
             </div>
             <div class="hobbie">
               <svg>
@@ -81,14 +81,17 @@
           <h2>HOLA!!</h2>
           <h2>BIENVENID@</h2>
           <p>
-            Mi nombre es Esmith Alama Sánchez, soy <strong>Desarrollador Fronted</strong>. Me gusta aprender, mediante cursos virtuales y me fascina la idea de resolver problemas haciendo uso  del anáisis, la programación y sobretodo el diseño web. 
+            Mi nombre es <strong>Esmith Alama Sánchez</strong>, soy <strong>FrontEnd Developer</strong>. Me gusta aprender mediante cursos virtuales y me fascina la idea de resolver problemas haciendo uso  del anáisis, la programación y sobretodo el diseño web. 
           </p>
           <p>
             He realizado proyectos a nivel personal como grupal, plasmando mis conocimientos, a través del código.
           </p>
           <p>
-            <strong style="font-style: cursive;">"Permiteme darle un toque de diseño a tus proyectos."</strong>
+            <i>~Permiteme darle un toque de diseño a tus proyectos.</i>
+            <br />
+            <span class="email">Escribeme: <a href="mailto:esmith_as@hotmail.com">esmith_as@hotmail.com</a></span>
           </p>
+
         </div>
     </section>
 
@@ -103,11 +106,11 @@
 
     <section class="portfolio" id="Portfolio">
       <h2>Mi Portafolio</h2>
-      <ul>
+      <!-- <ul>
         <li><a href="#">App</a></li>
         <li><a href="#">Web Design</a></li>
         <li><a href="#">XD</a></li>
-      </ul>
+      </ul> -->
 
       <div class="works">     
 
@@ -116,42 +119,42 @@
       </div><!--Works-->
     </section><!--Portfolio-->
 
-    <section class="service" id="Service">
+    <!-- <section class="service" id="Service">
       <div class="cont-servicios">
         <div class="card-service">
           <img src="svg/ser-code.svg" alt="">
           <p>Creación de sitios web agradables y responsive.</p>
-        </div><!--Servicio1-->
+        </div>Servicio1
         <div class="card-service">
           <img src="svg/ser-xd.svg" alt="">
           <p>Maquetación de diseños en Adobe XD.</p>
-        </div><!--Servicio2-->
+        </div>Servicio2
         <div class="card-service">
           <img src="svg/ser-db.svg" alt="">
           <p>Análisis, diseño y creación de Base de datos.</p>
-        </div><!--Servicio3-->
+        </div>Servicio3
       </div>
-    </section><!--Servicios-->
+    </section>Servicios -->
 
-    <section class="contact" id="Contact">
-        <h2>Charlemos!</h2>
+    <!-- <section class="contact" id="Contact"> -->
+        <!-- <h2>Charlemos!</h2>
         <h3>¿Te interesa trabajar juntos? Envia un mensaje, es gratis ^^!!</h3>
-        <form action="">
+        <form id="formContact" action="" method="POST">
           <div class="acerca-ti">
             <label for="">Acerca de ti</label>
-            <input type="text" name="" id="txtNombres" placeholder="Full name" required>
-            <input type="email" name="" id="txtEmail" placeholder="@ Email" required>
+            <input type="text" name="nombre" id="txtNombres" placeholder="Full name" required onkeypress="return ui.validarLetras(event)">
+            <input type="email" name="correo" id="txtEmail" placeholder="@ Email" required>
           </div>
           <div class="detalle-idea">
             <label for="">Detalla tu idea</label> 
-            <textarea name="" id="txtDetalle" cols="30" rows="7" required></textarea>
+            <textarea name="mensaje" id="txtDetalle" cols="30" rows="7" required></textarea>
           </div>
-          <button>Enviar</button>
-        </form>
-    </section><!--Contacto-->
+          <button name="enviar" id="enviar">Enviar</button>
+        </form> -->
+    <!-- </section>Contacto -->
   </main>
   <footer>
-    <p> Esmith AS &#169; 2020. All rights reserved. </p>
+    <p>Esmith AS &#169; 2020</p>
   </footer>
   <script src="js/data.js" charset="utf-8"></script>
   <script src="js/ui.js" charset="utf-8"></script>
