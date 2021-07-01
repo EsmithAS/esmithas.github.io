@@ -1,163 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Esmith Sánchez</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style-font.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tailwind.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div id="menu">
-      <div class="cont-logo">
-        <a href="#" id="logo">
-            E / S
-        </a>
-        <button id="btnMenu">
-          <!-- <img src="svg/menu.svg" alt="" id="iconMenu"> -->
+  <header class="min-h-screen container bg-lighter">
+    <nav id="navbar" class="navbar w-full left-0 fixed bottom-0 px-4 py-3 flex justify-between items-center z-20 bg-lighter box-shadow">
+      <div class="navbar__logo">
+        <a href="#" class="text-lg text-primary font-semibold">E/S</a>
+      </div>
+      <div class="nabvar__cont__menu">
+        <ul class="navbar__menu w-full absolute bottom-full left-0 px-2 py-3 flex justify-evenly text-xs font-semibold z-10 bg-lighter border-b">
+          <li>
+            <a href="#about" class="text-primary hover:text-secundary flex flex-col items-center selected"><svg class="fill-current w-6 h-6"><use href="assets/svg/icon/user.svg#user"/></svg> About</a>
+          </li>
+          <li>
+            <a href="#skills" class="text-primary hover:text-secundary flex flex-col items-center"><svg class="fill-current w-6 h-6"><use href="assets/svg/icon/clipboard.svg#clipboard"/></svg> Skills</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="text-primary hover:text-secundary flex flex-col items-center"><svg class="fill-current w-6 h-6"><use href="assets/svg/icon/portfolio.svg#portfolio"/></svg> Portfolio</a>
+          </li>
+        </ul>
+        <div class="navbar__options flex space-x-2">
+          <button id="btn-theme" class="btn-theme w-5 h-5 p-px text-primary hover:text-secundary">
+            <svg class="fill-current w-full h-full"><use href="assets/svg/icon/moon.svg#moon"/></svg>
+          </button>
+          <button id="btn-menu" class="btn-menu w-5 h-5 p-px text-primary hover:text-secundary">
+            <svg class="fill-current w-full h-full"><use href="assets/svg/icon/menu.svg#menu"/></svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="home text-center">
+      <div class="home__perfil relative flex items-center px-12 pt-16 pb-12">
+        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <mask id="mask0" mask-type="alpha">
+              <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+              130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+              97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+              0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+          </mask>
+          <g mask="url(#mask0)">
+              <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+              165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+              129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+              -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+              <image xlink:href="assets/img/perfil.jpg" class="object-cover w-full"/>
+          </g>
+        </svg>
+        <ul class="absolute left-0 text-secundary">
+          <li><a href="#" class="my-1 inline-block w-5 h-5 p-px">
+            <svg class="w-full h-full fill-current"><use href="assets/svg/icon/github.svg#github"/></svg>
+          </a></li>
+          <li><a href="#" class="my-1 inline-block w-5 h-5 p-px">
+            <svg class="w-full h-full fill-current"><use href="assets/svg/icon/dribbble.svg#dribbble"/></svg>
+          </a></li>
+          <li><a href="#" class="my-1 inline-block w-5 h-5 p-px">
+            <svg class="w-full h-full fill-current"><use href="assets/svg/icon/linkedin.svg#linkedin"/></svg>
+          </a></li>
+        </ul>
+      </div>
+      <div class="home__info">
+        <h1 class="home__title font-bold text-primary text-2xl">Hi, I'am Esmith</h1>
+        <h3 class="home__title font-medium text-sm text-dark">Frontend developer</h3>
+        <p class="py-3 font-normal text-xs text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+        <button class="home__btn-contact rounded-lg text-sm mt-5 font-semibold tracking-wide inline-flex items-center px-4 py-3 bg-secundary hover:bg-secundary text-lighter">
+          <span>Contact Me</span>
+          <svg class="ml-3 w-4 h-4 fill-current"><use href="assets/svg/icon/send.svg#send"/></svg>        
         </button>
-      </div>
-      <nav id="menu-item">
-          <ul>
-              <li><a href="#About">Sobre mí</a></li>
-              <li><a href="#Skills">Habilidades</a></li>
-              <li><a href="#Portfolio" class="item-resalt">Portafolio</a></li>
-              <!-- <li><a href="#Contact">Contact</a></li> -->
-          </ul>
-      </nav>
-    </div>
-    <div id="perfil">
-        <!-- <img src="img/me.jpg" alt="perfil"> -->
-        <h1>Esmith Sánchez</h1>
-        <h4>Developer & Designer</h4>
-        <!-- <a href="#">CV</a> -->
-      </div>
-    <div class="redes">
-      <a href="https://github.com/EsmithAS" target="_blank">
-        <svg class="svgRedes">
-          <use href="svg/icons.svg#github"/>
-        </svg>
-      </a>
-      <a href="https://www.linkedin.com/in/esmith-alama-sánchez-447305179" target="_blank">
-        <svg class="svgRedes">
-          <use href="svg/icons.svg#linkedin"/>
-        </svg>
-      </a>
-    </div> 
-  </header>
-  <main>
-    <section class="me" id="About">
-        <div class="izquierda">
-          <img src="img/perfil.jpg" alt="" class="foto">
-          <h2>Hobbies</h2>
-          <div class="hobbies">
-            <div class="hobbie">
-              <svg>
-                <use href="svg/icons.svg#camara"/>
-              </svg>
-              <span>Fotografía</span>
-            </div>
-            <div class="hobbie">
-              <svg>
-                <use href="svg/icons.svg#videojuego"/>
-              </svg>
-              <span>Videojuegos</span>
-            </div>
-            <div class="hobbie">
-              <svg>
-                <use href="svg/icons.svg#peliculas"/>
-              </svg>
-              <span>Películas</span>
-            </div>
-          </div>
+        <div class="home__scroll mt-5">
+          <a href="#about" class="py-5 inline-flex flex-col justify-center items-center text-xs text-primary font-semibold">
+            <svg class="w-6 h-6 fill-current stroke-current stroke-1"><use href="assets/svg/icon/mouse.svg#mouse"/></svg>  
+            <span class="px-2 pt-2">Scroll down</span>
+          </a>
         </div>
-
-        <div class="derecha">
-          <h2>HOLA!!</h2>
-          <h2>BIENVENID@</h2>
-          <p>
-            Mi nombre es <strong>Esmith Alama Sánchez</strong>, soy <strong>FrontEnd Developer</strong>. Me gusta aprender mediante cursos virtuales y me fascina la idea de resolver problemas haciendo uso  del anáisis, la programación y sobretodo el diseño web. 
-          </p>
-          <p>
-            He realizado proyectos a nivel personal como grupal, plasmando mis conocimientos, a través del código.
-          </p>
-          <p>
-            <i>~Permiteme darle un toque de diseño a tus proyectos.</i>
-            <br />
-            <span class="email">Escribeme: <a href="mailto:esmith_as@hotmail.com">esmith_as@hotmail.com</a></span>
-          </p>
-
-        </div>
+      </div>
     </section>
-
-    <section class="skills" id="Skills">
-      <h2>Tecnologías</h2>
-      <div class="tecnologias">
-
-        <!-- Insertado skills con js -->
-
-      </div><!--Cont tecnologías-->
-    </section><!--Skills-->
-
-    <section class="portfolio" id="Portfolio">
-      <h2>Mi Portafolio</h2>
-      <!-- <ul>
-        <li><a href="#">App</a></li>
-        <li><a href="#">Web Design</a></li>
-        <li><a href="#">XD</a></li>
-      </ul> -->
-
-      <div class="works">     
-
-        <!-- Insertado con js -->
-
-      </div><!--Works-->
-    </section><!--Portfolio-->
-
-    <!-- <section class="service" id="Service">
-      <div class="cont-servicios">
-        <div class="card-service">
-          <img src="svg/ser-code.svg" alt="">
-          <p>Creación de sitios web agradables y responsive.</p>
-        </div>Servicio1
-        <div class="card-service">
-          <img src="svg/ser-xd.svg" alt="">
-          <p>Maquetación de diseños en Adobe XD.</p>
-        </div>Servicio2
-        <div class="card-service">
-          <img src="svg/ser-db.svg" alt="">
-          <p>Análisis, diseño y creación de Base de datos.</p>
-        </div>Servicio3
-      </div>
-    </section>Servicios -->
-
-    <!-- <section class="contact" id="Contact"> -->
-        <!-- <h2>Charlemos!</h2>
-        <h3>¿Te interesa trabajar juntos? Envia un mensaje, es gratis ^^!!</h3>
-        <form id="formContact" action="" method="POST">
-          <div class="acerca-ti">
-            <label for="">Acerca de ti</label>
-            <input type="text" name="nombre" id="txtNombres" placeholder="Full name" required onkeypress="return ui.validarLetras(event)">
-            <input type="email" name="correo" id="txtEmail" placeholder="@ Email" required>
-          </div>
-          <div class="detalle-idea">
-            <label for="">Detalla tu idea</label> 
-            <textarea name="mensaje" id="txtDetalle" cols="30" rows="7" required></textarea>
-          </div>
-          <button name="enviar" id="enviar">Enviar</button>
-        </form> -->
-    <!-- </section>Contacto -->
+  </header>
+  <main id="about">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. At fugiat eaque accusamus culpa suscipit illo vitae eos rem numquam cupiditate expedita saepe quisquam quo, ullam rerum nam totam quibusdam laborum repellendus, sit repellat sed! Neque quaerat animi eum laboriosam architecto suscipit velit, minus magni? Incidunt exercitationem cum, itaque cupiditate commodi rem hic ipsa quo illum perferendis, doloribus nam suscipit nisi corporis quod maiores! Rem iusto eaque earum omnis qui quasi at nemo similique eligendi explicabo optio sunt ratione vel cumque numquam, sit quo error totam mollitia atque nesciunt tempore dolore animi! Nisi reiciendis mollitia rem perferendis possimus veritatis repudiandae dolore culpa, deleniti, excepturi nobis tempore dolorum, debitis quo doloremque quae a. Corporis reprehenderit commodi, aut delectus non optio. Eligendi, alias dicta veritatis voluptatem libero dolor earum hic laborum reiciendis ad tenetur non fugit aut incidunt praesentium sed similique dolore, exercitationem in, at nemo aspernatur quaerat. Illo numquam laudantium ipsa consectetur?
   </main>
-  <footer>
-    <p>Esmith AS &#169; 2020</p>
-  </footer>
-  <script src="js/data.js" charset="utf-8"></script>
-  <script src="js/ui.js" charset="utf-8"></script>
-  <script src="js/app.js" charset="utf-8"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@
             "description" : "Sitio web informativo, acerca de la región Tumbes.",
             "imagen" : "web-tumbes.png",
             "tipe" : "web",
-            "technologies" : [ "HTML5" , "TailwindCSS" , "JS" ],
+            "technologies" : [ {"name":"HTML5","color":"bg-yellow-700"} , {"name":"TailwindCSS","color":"bg-green-600"} , {"name":"JS","color":"bg-yellow-400"} ],
             "link" : "https://esmithas.github.io/website-tumbes/"
         },
         {
@@ -39,7 +39,7 @@
             "description" : "Aplicacion para cotizar el valor de una cryptomoneda a una moneda, mediante una API.",
             "imagen" : "cotizador.png",
             "tipe" : "web",
-            "technologies" : [ "HTML5" , "Bootstrap" , "JS" ],
+            "technologies" : [ {"name":"HTML5","color":"bg-yellow-700"} , {"name":"Bootstrap","color":"bg-purple-500"} , {"name":"JS","color":"bg-yellow-400"} ],
             "link" : "https://esmithas.github.io/CotizadorCryptomonedas/"
         },
         {
@@ -47,7 +47,7 @@
             "description" : "Aplicación para subir fotos, con funcionalidad para visulizar, subir, editar, eliminar fotos. ( CRUD ).",
             "imagen" : "galeria.png",
             "tipe" : "web",
-            "technologies" : [ "HTML5" , "CSS" , "JS" , "PHP" ],
+            "technologies" : [ {"name":"HTML5","color":"bg-yellow-700"} , {"name":"CSS","color":"bg-blue-500"} , {"name":"JS","color":"bg-yellow-400"} , {"name":"PHP","color":"bg-purple-600"} ],
             "link" : "https://galeriacompartida.000webhostapp.com/"
         }
     ]
