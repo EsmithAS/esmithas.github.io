@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Esmith Sánchez</title>
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/tailwind.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -147,23 +148,23 @@
             </svg>
           </label>
           <div class="skills__tab-content overflow-hidden px-2 flex justify-center flex-wrap">
-            <div class="skill__card flex flex-col items-center p-2 mx-2 my-1">
+            <div class="skill__card flex flex-col items-center p-2 m-1">
               <img src="assets/svg/tec-html.svg" alt="html" class="w-12 h-12" loading="lazy">
               <h4 class="pt-1 text-primary font-medium text-xs">HTML5</h4>
             </div>
-            <div class="skill__card flex flex-col items-center p-2 mx-2 my-1">
+            <div class="skill__card flex flex-col items-center p-2 m-1">
               <img src="assets/svg/tec-css.svg" alt="css" class="w-12 h-12" loading="lazy">
               <h4 class="pt-1 text-primary font-medium text-xs">CSS3</h4>
             </div>
-            <div class="skill__card flex flex-col items-center p-2 mx-2 my-1">
+            <div class="skill__card flex flex-col items-center p-2 m-1">
               <img src="assets/svg/tec-js.svg" alt="js" class="w-12 h-12" loading="lazy">
               <h4 class="pt-1 text-primary font-medium text-xs">JS</h4>
             </div>
-            <div class="skill__card flex flex-col items-center p-2 mx-2 my-1">
+            <div class="skill__card flex flex-col items-center p-2 m-1">
               <img src="assets/svg/tec-tailwindcss.svg" alt="tailwindcss" class="w-12 h-12" loading="lazy">
               <h4 class="pt-1 text-primary font-medium text-xs">TailwindCSS</h4>
             </div>
-            <div class="skill__card flex flex-col items-center p-2 mx-2 my-1">
+            <div class="skill__card flex flex-col items-center p-2 m-1">
               <img src="assets/svg/tec-vuejs.svg" alt="vuejs" class="w-12 h-12" loading="lazy">
               <h4 class="pt-1 text-primary font-medium text-xs">VueJS</h4>
             </div>
@@ -183,11 +184,11 @@
             </svg>
           </label>
           <div class="skills__tab-content overflow-hidden px-2 flex justify-center flex-wrap">
-            <div class="skill__card flex flex-col items-center p-2 mx-2 my-1">
+            <div class="skill__card flex flex-col items-center p-2 m-1">
               <img src="assets/svg/tec-php.svg" alt="php" class="w-12 h-12" loading="lazy">
               <h4 class="pt-1 text-primary font-medium text-xs">PHP</h4>
             </div>
-            <div class="skill__card flex flex-col items-center p-2 mx-2 my-1">
+            <div class="skill__card flex flex-col items-center p-2 m-1">
               <img src="assets/svg/tec-mysql.svg" alt="mysql" class="w-12 h-12" loading="lazy">
               <h4 class="pt-1 text-primary font-medium text-xs">MYSQL</h4>
             </div>
@@ -207,15 +208,15 @@
             </svg>
           </label>
           <div class="skills__tab-content overflow-hidden px-2 flex justify-center flex-wrap">
-            <div class="skill__card flex flex-col items-center p-2 mx-2 my-1">
+            <div class="skill__card flex flex-col items-center p-2 m-1">
               <img src="assets/svg/tec-illustrator.svg" alt="illustrator" class="w-10 h-10" loading="lazy">
               <h4 class="pt-1 text-primary font-medium text-xs">Illustrator</h4>
             </div>
-            <div class="skill__card flex flex-col items-center p-2 mx-2 my-1">
+            <div class="skill__card flex flex-col items-center p-2 m-1">
               <img src="assets/svg/tec-photoshop.svg" alt="photoshop" class="w-10 h-10" loading="lazy">
               <h4 class="pt-1 text-primary font-medium text-xs">Photoshop</h4>
             </div>
-            <div class="skill__card flex flex-col items-center p-2 mx-2 my-1">
+            <div class="skill__card flex flex-col items-center p-2 m-1">
               <img src="assets/svg/tec-adobe-xd.svg" alt="xd" class="w-10 h-10" loading="lazy">
               <h4 class="pt-1 text-primary font-medium text-xs">XD</h4>
             </div>
@@ -223,7 +224,56 @@
         </div>
       </div>
     </section>
+    <section id="portfolio" class="min-h-screen container bg-lighter py-4">
+      <div class="skills__header py-5 text-center text-primary">
+        <h2 class="text-xl font-semibold">Portfolio</h2>
+        <p class="text-xs">Most recent work</p>
+      </div>
+      <div class="portfolio__main swiper-container py-2 my-2 overflow-visible">
+        <div class="swiper-wrapper space-x-2">
+          <div class="swiper-slide w-40 relative flex flex-col items-center rounded-lg shadow-2xl cursor-move">
+            <img src="https://images.pexels.com/photos/3550809/pexels-photo-3550809.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="object-cover w-full h-48 rounded-t-lg" loading="lazy">
+            <div class="cont__info-work p-4 bottom-0">
+              <h3 class="text-primary font-semibold uppercase text-lg">Project</h3>
+              <p class="py-3 text-dark text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptatibus!</p>
+              <a href="#" class="btn-cv rounded-lg text-xs mt-5 font-semibold tracking-wide inline-flex items-center px-4 py-3 text-secundary float-right">
+                <span>Demo</span>
+                <svg class="w-7 h-5 fill-current">
+                  <use href="assets/svg/icon/arrow-large.svg#arrow-large"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide w-40 relative flex flex-col items-center rounded-lg shadow-2xl cursor-move">
+            <img src="https://images.pexels.com/photos/3550809/pexels-photo-3550809.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="object-cover w-full h-48 rounded-t-lg" loading="lazy">
+            <div class="cont__info-work p-4 bottom-0">
+              <h3 class="text-primary font-semibold uppercase text-lg">Project 2</h3>
+              <p class="py-3 text-dark text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, voluptatibus!</p>
+              <a href="#" class="btn-cv rounded-lg text-xs mt-5 font-semibold tracking-wide inline-flex items-center px-4 py-3 text-secundary float-right">
+                <span>Demo</span>
+                <svg class="w-7 h-5 fill-current">
+                  <use href="assets/svg/icon/arrow-large.svg#arrow-large"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+          <!-- next / prev arrows -->
+          <button class="swiper-button-next cursor-pointer shadow-lg bg-lighter w-8 h-8 p-1 rounded-full top-full mt-1 hover:bg-lighter">
+            <svg class="w-full h-full stroke-current text-secundary transform -rotate-90">
+              <use href="assets/svg/icon/arrow.svg#arrow"/>
+            </svg>
+          </button>
+          <button class="swiper-button-prev cursor-pointer shadow-lg bg-lighter w-8 h-8 p-1 rounded-full top-full mt-1 hover:bg-lighter">
+            <svg class="w-full h-full stroke-current text-secundary transform rotate-90">
+              <use href="assets/svg/icon/arrow.svg#arrow"/>
+            </svg>
+          </button>
+          <!-- !next / prev arrows -->
+      </div>
+    </section>
   </main>
+  <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

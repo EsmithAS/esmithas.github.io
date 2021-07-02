@@ -26,3 +26,14 @@ qs('#btn-theme').addEventListener( 'click' , (e) => {
 
     qs('#btn-theme > svg > use').setAttribute( 'href', icon );
 } );
+
+const Swipes = new Swiper('.swiper-container', {
+    loop: false,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});

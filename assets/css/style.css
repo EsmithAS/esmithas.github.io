@@ -160,3 +160,14 @@ input[type="radio"]:checked + label + div.skills__tab-content {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+/*SWIPER JS*/
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    content: '';
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
