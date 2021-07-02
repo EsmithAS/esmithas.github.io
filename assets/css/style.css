@@ -15,6 +15,12 @@ html {
 html::-webkit-scrollbar {
     display: none;
 }
+body.dark .border-color {
+    border-color: rgba(55,65,81,1);
+}
+body .border-color {
+    border-color: rgba(209,213,219,1)
+}
 body.dark {
     --color-primary : #eef2f7;
     --color-secundary : #4e8fcc;
@@ -141,4 +147,16 @@ body.dark {
     100% {
         transform: translateY(0px);
     }
+}
+input[type="radio"] + label + div {
+    max-height: 0;
+    transition: .5s;
+}
+input[type="radio"]:checked + label > svg {
+    transform: rotateZ(180deg);
+}
+input[type="radio"]:checked + label + div.skills__tab-content {
+    max-height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
