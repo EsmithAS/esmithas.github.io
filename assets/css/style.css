@@ -19,7 +19,7 @@ body.dark .border-color {
     border-color: rgba(55,65,81,1);
 }
 body .border-color {
-    border-color: rgba(209,213,219,1)
+    border-color: rgba(209,213,219,1);
 }
 body.dark {
     --color-primary : #eef2f7;
@@ -117,14 +117,13 @@ body.dark {
     fill: var(--color-secundary);
 }
 .container {
-    padding: 0 1.5rem;
+    padding-left:  1.5rem;
+    padding-right:  1.5rem;
     width: 100%;
     max-width: 100%;
 }
 
 .navbar__menu {
-    opacity: 0;
-    pointer-events: none;
     transition: .5s;
     bottom: 50%;
 }
@@ -159,6 +158,27 @@ input[type="radio"]:checked + label + div.skills__tab-content {
     max-height: 100vh;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+@media ( min-width: 640px ) {
+    .sm\:box-shadow-none {
+        box-shadow: none;
+    }
+    body .border-color {
+        border-color: transparent !important;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        padding-left:  3.5rem;
+        padding-right: 3.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        padding-left:  5rem;
+        padding-right: 5rem;
+    }
 }
 
 /*SWIPER JS*/

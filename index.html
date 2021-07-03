@@ -13,37 +13,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header class="min-h-screen container bg-lighter">
-    <nav id="navbar" class="navbar w-full left-0 fixed bottom-0 px-4 py-3 flex justify-between items-center z-20 bg-lighter box-shadow">
+<body class="bg-lighter">
+  <header class="min-h-screen h-screen block sm:flex sm:items-center container bg-lighter">
+    <nav id="navbar" class="navbar container w-full left-0 fixed bottom-0 sm:bottom-auto sm:top-0 px-4 sm:px-8 py-3 flex justify-between items-center z-20 bg-lighter box-shadow sm:box-shadow-none">
       <div class="navbar__logo">
         <a href="#" class="text-lg text-primary font-semibold">E/S</a>
       </div>
-      <div class="nabvar__cont__menu">
-        <ul class="navbar__menu w-full absolute bottom-full left-0 px-2 py-3 flex justify-evenly text-xs font-semibold z-10 bg-lighter border-b border-color">
-          <li>
-            <a href="#about" class="text-primary hover:text-secundary flex flex-col items-center selected"><svg class="fill-current w-6 h-6"><use href="assets/svg/icon/user.svg#user"/></svg> About</a>
+      <div class="nabvar__cont__menu inline-block sm:flex sm:items-center">
+        <ul class="navbar__menu w-full sm:w-auto absolute sm:static bottom-full sm:bottom-auto left-0 sm:left-auto px-2 py-3 flex justify-evenly text-xs font-semibold z-10 bg-lighter border-b border-color opacity-0 sm:opacity-100 pointer-events-none	sm:pointer-events-auto">
+          <li class="mx-0 sm:mx-4">
+            <a href="#about" class="text-primary hover:text-secundary flex flex-col items-center selected"><svg class="fill-current w-6 h-6 inline-block sm:hidden"><use href="assets/svg/icon/user.svg#user"/></svg> About</a>
           </li>
-          <li>
-            <a href="#skills" class="text-primary hover:text-secundary flex flex-col items-center"><svg class="fill-current w-6 h-6"><use href="assets/svg/icon/clipboard.svg#clipboard"/></svg> Skills</a>
+          <li class="mx-0 sm:mx-4">
+            <a href="#skills" class="text-primary hover:text-secundary flex flex-col items-center"><svg class="fill-current w-6 h-6 inline-block sm:hidden"><use href="assets/svg/icon/clipboard.svg#clipboard"/></svg> Skills</a>
           </li>
-          <li>
-            <a href="#portfolio" class="text-primary hover:text-secundary flex flex-col items-center"><svg class="fill-current w-6 h-6"><use href="assets/svg/icon/portfolio.svg#portfolio"/></svg> Portfolio</a>
+          <li class="mx-0 sm:mx-4">
+            <a href="#portfolio" class="text-primary hover:text-secundary flex flex-col items-center"><svg class="fill-current w-6 h-6 inline-block sm:hidden"><use href="assets/svg/icon/portfolio.svg#portfolio"/></svg> Portfolio</a>
           </li>
         </ul>
         <div class="navbar__options flex space-x-2">
           <button id="btn-theme" class="btn-theme w-5 h-5 p-px text-primary hover:text-secundary">
             <svg class="fill-current w-full h-full"><use href="assets/svg/icon/moon.svg#moon"/></svg>
           </button>
-          <button id="btn-menu" class="btn-menu w-5 h-5 p-px text-primary hover:text-secundary">
+          <button id="btn-menu" class="btn-menu w-5 h-5 p-px text-primary hover:text-secundary inline-block sm:hidden">
             <svg class="fill-current w-full h-full"><use href="assets/svg/icon/menu.svg#menu"/></svg>
           </button>
         </div>
       </div>
     </nav>
-    <section id="home" class="home text-center">
-      <div class="home__perfil relative flex items-center px-12 pt-16 pb-12">
-        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <section id="home" class="home w-full static sm:relative text-center sm:text-left flex flex-col sm:flex-row-reverse sm:items-start sm:justify-between md:justify-around px-0 sm:px-10">
+      <div class="home__perfil relative sm:static flex items-center sm:items-start px-12 sm:px-5 pt-16 sm:pt-0 pb-12 sm:pb-0">
+        <svg class="home__blob w-40 sm:w-48 md lg:w-60 :w-72 mx-auto" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <mask id="mask0" mask-type="alpha">
               <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
               130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
@@ -58,7 +58,7 @@
               <image xlink:href="assets/img/perfil.jpg" class="object-cover w-full" loading="lazy"/>
           </g>
         </svg>
-        <ul class="absolute left-0 text-secundary">
+        <ul class="absolute left-0 sm:inset-y-0 sm:flex sm:flex-col sm:justify-center text-secundary">
           <li><a href="#" class="my-1 inline-block w-5 h-5 p-px">
             <svg class="w-full h-full fill-current"><use href="assets/svg/icon/github.svg#github"/></svg>
           </a></li>
@@ -70,16 +70,16 @@
           </a></li>
         </ul>
       </div>
-      <div class="home__info">
-        <h1 class="home__title font-bold text-primary text-2xl">Hi, I'am Esmith</h1>
-        <h3 class="home__title font-medium text-sm text-dark">Frontend developer</h3>
-        <p class="py-3 font-normal text-xs text-dark leading-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
+      <div class="home__info max-w-xl	">
+        <h1 class="home__title font-bold text-primary text-2xl md:text-3xl lg:text-4xl">Hi, I'am Esmith</h1>
+        <h3 class="home__title font-medium text-sm lg:text-base text-dark">Frontend developer</h3>
+        <p class="py-3 font-normal text-xs lg:text-sm text-dark leading-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
         <a href="#contact" class="home__btn-contact rounded-lg text-sm mt-5 font-semibold tracking-wide inline-flex items-center px-4 py-3 bg-secundary hover:bg-secundary text-lighter">
           <span>Contact Me</span>
           <svg class="ml-3 w-4 h-4 fill-current"><use href="assets/svg/icon/send.svg#send"/></svg>        
         </a>
         <div class="home__scroll mt-5">
-          <a href="#about" class="py-5 inline-flex flex-col justify-center items-center text-xs text-primary font-semibold">
+          <a href="#about" class="py-5 inline-flex flex-col sm:flex-row justify-center items-center text-xs text-primary font-semibold">
             <svg class="w-6 h-6 fill-current stroke-current stroke-1"><use href="assets/svg/icon/mouse.svg#mouse"/></svg>  
             <span class="px-2 pt-2">Scroll down</span>
           </a>
@@ -87,8 +87,8 @@
       </div>
     </section>
   </header>
-  <main>
-    <section id="about" class="min-h-screen container bg-lighter py-4">
+  <main class="max-w-sm mx-auto bg-lighter">
+    <section id="about" class="min-h-screen container bg-lighter py-4 mx-auto">
       <div class="about__perfil py-5">
         <img src="assets/img/perfil.jpg" alt="perfil" class="w-40 h-40 object-cover mx-auto" loading="lazy">        
       </div>
