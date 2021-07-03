@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="overflow-x-hidden">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
   <title>Esmith Sánchez</title>
+  <meta name="description" content="">
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/tailwind.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -73,10 +74,10 @@
         <h1 class="home__title font-bold text-primary text-2xl">Hi, I'am Esmith</h1>
         <h3 class="home__title font-medium text-sm text-dark">Frontend developer</h3>
         <p class="py-3 font-normal text-xs text-dark leading-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit..</p>
-        <button class="home__btn-contact rounded-lg text-sm mt-5 font-semibold tracking-wide inline-flex items-center px-4 py-3 bg-secundary hover:bg-secundary text-lighter">
+        <a href="#contact" class="home__btn-contact rounded-lg text-sm mt-5 font-semibold tracking-wide inline-flex items-center px-4 py-3 bg-secundary hover:bg-secundary text-lighter">
           <span>Contact Me</span>
           <svg class="ml-3 w-4 h-4 fill-current"><use href="assets/svg/icon/send.svg#send"/></svg>        
-        </button>
+        </a>
         <div class="home__scroll mt-5">
           <a href="#about" class="py-5 inline-flex flex-col justify-center items-center text-xs text-primary font-semibold">
             <svg class="w-6 h-6 fill-current stroke-current stroke-1"><use href="assets/svg/icon/mouse.svg#mouse"/></svg>  
@@ -225,7 +226,7 @@
       </div>
     </section>
     <section id="portfolio" class="min-h-screen container bg-lighter py-4">
-      <div class="skills__header py-5 text-center text-primary">
+      <div class="portfolio__header py-5 text-center text-primary">
         <h2 class="text-xl font-semibold">Portfolio</h2>
         <p class="text-xs">Most recent work</p>
       </div>
@@ -272,7 +273,100 @@
           <!-- !next / prev arrows -->
       </div>
     </section>
+    <section id="contact" class="container bg-lighter py-4">
+      <div class="contact__header py-5 text-center text-primary">
+        <h2 class="text-xl font-semibold">Contact Me</h2>
+        <p class="text-xs">Most recent work</p>
+      </div>
+      <div class="contact__main py-2 mt-2">
+        <div class="contact__phone flex items-center py-4">
+          <div class="w-8 h-8">
+            <svg class="w-full h-full fill-current text-secundary transform">
+              <use href="assets/svg/icon/phone.svg#phone"/>
+            </svg>
+          </div>
+          <div class="ml-3 text-primary text-sm">
+            <h3 class="font-semibold">Call Me</h3>
+            <p class="flex text-xs pt-1">
+              <svg class="w-4 h-4">
+                <use href="assets/svg/icon/peru.svg#peru"/>
+              </svg>
+              <span class="mx-2">(+51)</span>
+              <span>922 138 332</span>
+            </p>
+          </div>
+        </div>
+        <div class="contact__mail flex items-center py-4">
+          <div class="w-8 h-8 p-1">
+            <svg class="w-full h-full fill-current text-secundary transform">
+              <use href="assets/svg/icon/email.svg#email"/>
+            </svg>
+          </div>
+          <div class="ml-3 text-primary text-sm">
+            <h3 class="font-semibold">Email</h3>
+            <p class="flex text-xs pt-1">
+              <span>esmith_as@hotmail.com</span>
+            </p>
+          </div>
+        </div>
+        <div class="contact__location flex items-center py-4">
+          <div class="w-8 h-8">
+            <svg class="w-full h-full fill-current text-secundary transform">
+              <use href="assets/svg/icon/location.svg#location"/>
+            </svg>
+          </div>
+          <div class="ml-3 text-primary text-sm">
+            <h3 class="font-semibold">Location</h3>
+            <p class="flex text-xs pt-1">
+              <span>esmith_as@hotmail.com</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="bg-lighter py-10">
+    <div class="container bg-secundary my-3">
+      <div class="topFooter">
+        <div class="py-5">
+          <h2 class="text-lighter font-bold text-lg">Esmith AS</h2>
+          <p class="text-lighter text-xs">Frontend developer</p>
+        </div>
+        <div class="py-5">
+          <ul class="text-sm font-medium">
+            <li class="py-2">
+              <a href="#about" class="text-lighter hover:text-lighter">About</a>
+            </li>
+            <li class="py-2">
+              <a href="#skills" class="text-lighter hover:text-lighter">Skills</a>
+            </li>
+            <li class="py-2">
+              <a href="#portfolio" class="text-lighter hover:text-lighter">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+        <div class="py-2">
+          <ul class="text-lighter flex space-x-5">
+            <li><a href="#" class="my-1 inline-block w-5 h-5 p-px">
+              <svg class="w-full h-full fill-current"><use href="assets/svg/icon/facebook.svg#facebook"/></svg>
+            </a></li>
+            <li><a href="#" class="my-1 inline-block w-5 h-5 p-px">
+              <svg class="w-full h-full fill-current"><use href="assets/svg/icon/instagram.svg#instagram"/></svg>
+            </a></li>
+            <li><a href="#" class="my-1 inline-block w-5 h-5 p-px">
+              <svg class="w-full h-full fill-current"><use href="assets/svg/icon/twitter.svg#twitter"/></svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="py-2">
+        <span class="mt-4 bg-lighter block w-5 h-1 rounded-full mx-auto"></span>
+        <p class="text-lighter text-xs py-4 opacity-75 text-center tracking-widest">
+          Esmith AS &copy; 2021
+        </p>
+      </div>
+    </div>
+  </footer>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
