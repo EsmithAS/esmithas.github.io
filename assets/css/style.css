@@ -164,7 +164,7 @@ input[type="radio"]:checked + label + div.skills__tab-content {
     .sm\:box-shadow-none {
         box-shadow: none;
     }
-    body .border-color {
+    nav ul.border-color {
         border-color: transparent !important;
     }
 }
