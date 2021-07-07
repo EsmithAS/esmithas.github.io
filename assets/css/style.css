@@ -23,12 +23,10 @@ body .border-color {
 }
 body.dark {
     --color-primary : #eef2f7;
-    --color-secundary : #4e8fcc;
     --color-lighter : #232931;
     --color-dark : #eef2f7;
 
     --color-primary-after : #c3c9cf;
-    --color-secundary-after : #4278aa;
     --color-lighter-after : #161a1f;
     --color-dark-after : #eef2f7;
 }
@@ -190,4 +188,37 @@ input[type="radio"]:checked + label + div.skills__tab-content {
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
     opacity: 0;
+}
+
+/*loading*/
+.hidden-element {
+    opacity: 0;
+    pointer-events: none;
+}
+.loading::before, 
+.loading::after {
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background-color: var(--color-secundary);
+	border-radius: 50%;
+}
+.loading::before {
+	animation: loading 1s infinite;
+}
+.loading::after {
+	animation: loading 1s infinite reverse;
+}
+@keyframes loading {
+	0% {
+		width: 150px;
+		height: 150px;
+		opacity: 1;
+	}
+	100% {
+		width: 0px;
+		height: 0px;
+		opacity: .2;
+	}
 }
