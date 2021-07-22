@@ -90,6 +90,9 @@
     </section>
   </header>
   <main class="max-w-sm sm:max-w-xl md:max-w-3xl lg:max-w-4xl mx-auto bg-lighter">
+    <a href="#" id="btnHome" class="fixed right-0 bottom-0 mb-16 sm:mb-5 m-5 w-10 h-10 p-px text-lighter bg-secundary rounded-lg shadow-xl hidden-element opacity-100 z-10">
+      <svg class="stroke-current w-full h-full transform rotate-180"><use href="assets/svg/icon/arrow.svg#arrow"></use></svg>
+    </a>
     <section id="about" class="min-h-screen h-screen container bg-lighter flex items-center">
       <div class="-mt-10 w-full">
         <div class="about__header py-5 text-center text-primary">
@@ -128,7 +131,7 @@
               </div>
             </div>
             <div class="about__btn-cv text-center sm:text-left py-5 sm:pb-0">
-              <a href="#" class="btn-cv rounded-lg text-sm mt-5 font-semibold tracking-wide inline-flex items-center px-4 py-3 bg-secundary hover:bg-secundary text-lighter">
+              <a href="#" class="hidden btn-cv rounded-lg text-sm mt-5 font-semibold tracking-wide inline-flex items-center px-4 py-3 bg-secundary hover:bg-secundary text-lighter">
                 <span>Download CV</span>
                 <svg class="ml-3 w-5 h-5 fill-current">
                   <use href="assets/svg/icon/download.svg#download"/>
@@ -378,7 +381,7 @@
           </ul>
         </div>
         <div class="py-2 sm:py-5">
-          <ul class="text-lighter flex space-x-5">
+          <ul class="hidden text-lighter flex space-x-5">
             <li><a href="https://web.facebook.com/profile.php?id=100010112858117" target="_blank" class="my-1 inline-block w-5 h-5 p-px">
               <svg class="w-full h-full fill-current"><use href="assets/svg/icon/facebook.svg#facebook"/></svg>
             </a></li>
@@ -389,11 +392,22 @@
               <svg class="w-full h-full fill-current"><use href="assets/svg/icon/twitter.svg#twitter"/></svg>
             </a></li>
           </ul>
+          <ul class="text-lighter flex space-x-5">
+            <li><a href="https://github.com/EsmithAS" target="_blank" class="my-1 inline-block w-5 h-5 p-px">
+              <svg class="w-full h-full fill-current"><use href="assets/svg/icon/github.svg#github"/></svg>
+            </a></li>
+            <li><a href="https://dribbble.com/EsmithAS" target="_blank" class="my-1 inline-block w-5 h-5 p-px">
+              <svg class="w-full h-full fill-current"><use href="assets/svg/icon/dribbble.svg#dribbble"/></svg>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/esmith-alama-sánchez-447305179" target="_blank" class="my-1 inline-block w-5 h-5 p-px">
+              <svg class="w-full h-full fill-current"><use href="assets/svg/icon/linkedin.svg#linkedin"/></svg>
+            </a></li>
+          </ul>
         </div>
       </div>
       <div class="py-2">
         <span class="mt-4 bg-lighter block w-5 h-1 rounded-full mx-auto"></span>
-        <p class="text-lighter text-xs py-4 opacity-75 text-center tracking-widest">
+        <p class="text-lighter text-xs py-4 text-center tracking-widest">
           Esmith AS &copy; 2021
         </p>
       </div>

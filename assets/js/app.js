@@ -80,6 +80,11 @@ qsAll('section').forEach( e =>{
 })
 window.onscroll = ()=>{
     const scrollY = window.scrollY
+    if (scrollY > (window.screen.height / 2)) {
+        qs('a#btnHome').classList.remove('hidden-element')
+    } else {
+        qs('a#btnHome').classList.add('hidden-element')
+    }
     for( let i in sections ){
         if (sections[i] <= scrollY) {
             if (qs('nav a[href*='+ i +']') && qs('a.selected')) {
