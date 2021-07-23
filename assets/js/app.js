@@ -54,16 +54,45 @@ function changeTheme () {
 /*----------------
 -- JS SWIPER
 ------------------*/
-const Swipes = new Swiper('.swiper-container', {
-    loop: false,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    pagination: {
-        el: '.swiper-pagination',
-    },
-});
+// const Swipes = new Swiper('.swiper-container', {
+//     slidesPerView: 2,
+//     loop: false,
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
+// });
+newSwiper('.portfolio__main',( config )=>{
+    return config;
+})
+newSwiper('.portfolio__main-fm',( config )=>{
+    config.slidesPerView = 1;
+    config.spaceBetween = 15;
+    config.breakpoints = {
+        769: {
+            slidesPerView: 2,
+            spaceBetween: 10
+        }
+    }
+    return config;
+})
+function newSwiper(selector, AddConfig ) {
+    const config = {
+        loop: false,
+        navigation: {
+            nextEl: `${selector} .swiper-button-next`,
+            prevEl: `${selector} .swiper-button-prev`
+        },
+        pagination: {
+            el: `${selector} .swiper-pagination`
+        }
+    };
+    
+    const Swipes = new Swiper(selector, AddConfig(config) );
+}
 
 /*----------------
 -- JS SELECT MENU

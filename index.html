@@ -240,8 +240,8 @@
         </div>
       </div>
     </section>
-    <section id="portfolio" class="min-h-screen container bg-lighter py-4 flex items-center">
-      <div class="-mt-12 w-full">
+    <section id="portfolio" class="min-h-screen container bg-lighter py-4 flex flex-col items-center">
+      <div class="mt-12 w-full mb-32">
         <div class="portfolio__header py-5 text-center text-primary">
           <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold">Portfolio</h2>
           <p class="text-xs md:text-sm">Most recent works</p>
@@ -269,7 +269,7 @@
                   </svg>
                 </a>
               </div>
-            </div>
+            </div><!--Card-->
             <div class="swiper-slide w-40 h-auto sm:h-72 md:h-80 relative flex flex-col sm:flex-row items-center sm:items-start rounded-lg shadow-2xl cursor-move flex-wrap">
               <img src="assets/img/galery.png" alt="galery" class="object-cover object-top w-full sm:w-60 md:w-72 lg:w-80 h-48 sm:h-full rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none" loading="lazy">
               <div class="cont__info-work relative flex-1 sm:h-full p-4 sm:p-6 lg:px-10 bottom-0">
@@ -291,7 +291,50 @@
                   </svg>
                 </a>
               </div>
-            </div>
+            </div><!--Card-->
+          </div>
+            <!-- next / prev arrows -->
+            <button class="swiper-button-next cursor-pointer shadow-lg bg-lighter w-8 sm:w-10 h-8 sm:h-10 p-1 rounded-full top-full mt-1 sm:mt-5 hover:bg-lighter">
+              <svg class="w-full h-full stroke-current text-secundary transform -rotate-90">
+                <use href="assets/svg/icon/arrow.svg#arrow"/>
+              </svg>
+            </button>
+            <button class="swiper-button-prev cursor-pointer shadow-lg bg-lighter w-8 sm:w-10 h-8 sm:h-10 p-1 rounded-full top-full mt-1 sm:mt-5 hover:bg-lighter">
+              <svg class="w-full h-full stroke-current text-secundary transform rotate-90">
+                <use href="assets/svg/icon/arrow.svg#arrow"/>
+              </svg>
+            </button>
+            <!-- !next / prev arrows -->
+        </div>
+      </div>
+
+      <div class="mt-20 w-full">
+        <div class="portfolio__header py-5 text-left text-primary">
+          <h2 class="text-base md:text-lg lg:text-xl font-semibold">Frontend Mentor <a href="https://www.frontendmentor.io/profile/EsmithAS" target="_blank" class="text-secundary text-xs sm:text-sm"> ~ @EsmithAS</a> </h2>
+          <p class="text-xs md:text-sm">Challenges</p>
+        </div>
+        <div class="portfolio__main-fm swiper-container py-2 my-2 overflow-visible">
+          <div class="swiper-wrapper space-x-2 sm:space-x-5 lg:space-x-10 xl:space-x-20">
+            <div class="swiper-slide h-auto relative rounded-lg shadow-2xl cursor-move">
+              <img src="assets/img/fm-Stats-preview-card-component.jpeg" alt="fm-01" class="object-cover object-center w-full h-48 rounded-t-lg" loading="lazy">
+              <div class="cont__info-work relative w-full p-4 sm:p-6 lg:px-8 bottom-0">
+                <h3 class="text-primary font-semibold uppercase text-base tracking-wide">Stats preview card component</h3>
+                <p class="py-3 text-dark text-sm">El desafío es construir un componente de tarjeta.</p>
+                <div class="cont-technology">
+                  <h4 class="text-primary font-semibold text-sm pt-4">Technologies</h4>
+                  <div class="technology py-4 flex flex-wrap">
+                    <span class="text-xs py-1 px-2 rounded-full bg-yellow-600 text-primary mr-1 mb-1">HTML</span>
+                    <span class="text-xs py-1 px-2 rounded-full bg-blue-500 text-primary mr-1 mb-1">CSS</span>
+                  </div>
+                </div>
+                <a href="https://www.frontendmentor.io/solutions/stats-preview-card-component-3OzThv6t_" target="_blank" class="btn-cv rounded-lg text-xs relative bottom-0 right-0 my-4 font-semibold tracking-wide inline-flex items-center px-2 py-1 text-secundary float-right">
+                  <span>View</span>
+                  <svg class="w-7 h-5 fill-current">
+                    <use href="assets/svg/icon/arrow-large.svg#arrow-large"/>
+                  </svg>
+                </a>
+              </div>
+            </div><!--Card-->            
           </div>
             <!-- next / prev arrows -->
             <button class="swiper-button-next cursor-pointer shadow-lg bg-lighter w-8 sm:w-10 h-8 sm:h-10 p-1 rounded-full top-full mt-1 sm:mt-5 hover:bg-lighter">
@@ -308,7 +351,7 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="container bg-lighter py-4">
+    <section id="contact" class="mt-40 container bg-lighter py-4">
       <div class="contact__header py-5 text-center text-primary">
         <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold">Contact Me</h2>
         <p class="text-xs md:text-sm">Get in touch</p>
