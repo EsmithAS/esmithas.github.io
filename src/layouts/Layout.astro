@@ -1,0 +1,52 @@
+---
+import Header from "../components/Header.astro";
+import { ViewTransitions } from "astro:transitions";
+import ScrollDown from '../components/ScrollDown.astro';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Esmith | {title}</title>
+		<meta name="description" content={description}>
+		<ViewTransitions />
+	</head>
+	<body>
+		<div class="w-full h-screen flex justify-center">
+			<ScrollDown />
+			<div class="relative max-w-7xl w-full mx-auto px-10 py-12 mt-20 sm:mb-14">
+				<slot/>
+				<Header />
+			</div>
+		</div>
+	</body>
+</html>
+<style is:global>
+	::-webkit-scrollbar {
+		display: none;
+	}
+</style>
+
+<script is:inline>
+	// document.addEventListener('astro:after-preparation', () => {
+	// 	const bodyHeight = document.body.scrollHeight;
+    //     const windowHeight = window.innerHeight;
+    //     console.log(bodyHeight + " > " + windowHeight);
+    //     console.log(bodyHeight > windowHeight);
+    //     if (bodyHeight <= windowHeight) {
+    //         document.querySelector(".effect__scroll").classList.add('hidden')
+    //     }
+	// })
+</script>

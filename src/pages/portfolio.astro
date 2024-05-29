@@ -1,0 +1,100 @@
+---
+import { fade } from 'astro:transitions';
+import Layout from '../layouts/Layout.astro';
+
+//ASSESTS
+import imgBudged from '../assets/img/1-budget.png';
+import imgNunawara from '../assets/img/2-nunawara.png';
+import imgCapuli from '../assets/img/3-capuli.png';
+import imgCrypto from '../assets/img/4-crypto.png';
+import imgFm1 from '../assets/img/5-fm-1.png';
+import imgFm2 from '../assets/img/6-fm-2.png';
+import imgFm3 from '../assets/img/7-fm-3.png';
+---
+
+<Layout title='Portafolio' description='Esmith Alama Sanchez'>
+	<section class="w-full flex flex-col md:flex-row md:items-start mx-auto space-x-0 lg:space-x-24 flex-initial pr-0 md:pr-24" transition:animate={fade({duration: "2.5s"})}>
+		
+		<div class="static md:sticky top-0 md:top-16 w-24 flex flex-row md:flex-col md:justify-center items-center md:flex-wrap">
+			<h2 class="flex justify-center items-center pr-5 md:pr-0 w-16 h-10 sm:w-16 sm:h-16 md:w-24 md:h-24 text-3xl sm:text-5xl md:text-7xl text-gray-800 border-r-2 border-gray-600 md:border-r-0 md:border-transparent">02</h2>
+			<span class="hidden md:inline-block md:border-t-2 border-gray-600 w-16"></span>
+			<span class="hidden md:inline-block border-l-2 border-gray-600 h-24 mt-5 mb-10"></span>
+			<p class="relative md:-rotate-90 ml-5 sm:ml-10 md:ml-0">
+				<span class="relative z-10 text-xl md:text-base uppercase tracking-widest md:font-semibold text-gray-800">Works</span>
+				<span class="mt-4 md:mt-0 absolute left-0 z-0 px-10 md:px-8 -ml-1 w-full h-3 bg-blue-400 inline-block"></span>
+			</p>
+		</div>
+		<div class="bg-gray-100 h-fit mt-8 sm:mt-14 md:mt-0 w-full p-10">
+			<h1 class="text-4xl sm:text-5xl md:text-6xl text-gray-900">Portafolio</h1>
+			<h2 class="text-gray-400 text-sm">Mis trabajos recientes</h2>
+			<p class="text-base mt-8 text-gray-600 italic">~Proyectos</p>
+			<div class="grid md:grid-cols-1 lg:grid-cols-2 gap-7 mt-5">
+				<div class="card-portfolio transition duration-500 p-4 shadow-xl shadow-transparent hover:shadow-gray-300 bg-white cursor-pointer">
+					<div class="relative max-h-32 md:max-h-48 h-full">
+						<div class="cover-img w-full h-full absolute bg-gray-800 bg-opacity-75 transition duration-500"></div>
+						<img src={imgBudged.src} alt="imgBudged" class="w-full h-full object-cover object-top">
+					</div>
+					<p class="text-xs pt-4 text-gray-600 italic">~HTML, TailwindCSS, React, TypeScript</p>
+					<h3 class="text-base pt-4 text-gray-600 font-semibold uppercase">App Budget</h3>
+				</div>
+				<div class="card-portfolio transition duration-500 p-4 shadow-xl shadow-transparent hover:shadow-gray-300 bg-white cursor-pointer">
+					<div class="relative max-h-32 md:max-h-48 h-full">
+						<div class="cover-img w-full h-full absolute bg-gray-800 bg-opacity-75 transition duration-500"></div>
+						<img src={imgNunawara.src} alt="imgNunawara" class="w-full h-full object-cover object-top">
+					</div>
+					<p class="text-xs pt-4 text-gray-600 italic">~Nuxt, HTML, Booststrap</p>
+					<h3 class="text-base pt-4 text-gray-600 font-semibold uppercase">Nunawara</h3>
+				</div>
+				<div class="card-portfolio transition duration-500 p-4 shadow-xl shadow-transparent hover:shadow-gray-300 bg-white cursor-pointer">
+					<div class="relative max-h-32 md:max-h-48 h-full">
+						<div class="cover-img w-full h-full absolute bg-gray-800 bg-opacity-75 transition duration-500"></div>
+						<img src={imgCapuli.src} alt="imgCapuli" class="w-full h-full object-cover object-top">
+					</div>
+					<p class="text-xs pt-4 text-gray-600 italic">~HTML, TailwindCSS, VueJS</p>
+					<h3 class="text-base pt-4 text-gray-600 font-semibold uppercase">Capuli</h3>
+				</div>
+				<div class="card-portfolio transition duration-500 p-4 shadow-xl shadow-transparent hover:shadow-gray-300 bg-white cursor-pointer">
+					<div class="relative max-h-32 md:max-h-48 h-full">
+						<div class="cover-img w-full h-full absolute bg-gray-800 bg-opacity-75 transition duration-500"></div>
+						<img src={imgCrypto.src} alt="crypto" class="w-full h-full object-cover object-top">
+					</div>
+					<p class="text-xs pt-4 text-gray-600 italic">~HTML, CSS, React, TypeScript</p>
+					<h3 class="text-base pt-4 text-gray-600 font-semibold uppercase">App cripto</h3>
+				</div>
+			</div>
+			<p class="text-base mt-24 text-gray-600 italic">~Frontend Mentor | <a href="https://www.frontendmentor.io/profile/EsmithAS" target="_blank" class="text-sm text-blue-500 font-bold">@EsmithAS</a></p>
+			<div class="grid md:grid-cols-1 lg:grid-cols-3 gap-5 mt-5">
+				<div class="lg:h-fit card-portfolio transition duration-500 p-3 shadow-xl shadow-transparent hover:shadow-gray-300 bg-white cursor-pointer">
+					<div class="relative max-h-32 md:max-h-60 h-full">
+						<div class="cover-img w-full h-full absolute bg-gray-800 bg-opacity-75 transition duration-500"></div>
+						<img src={imgFm1.src} alt="imgFm1" class="w-full h-full object-cover object-top">
+					</div>
+					<p class="text-xs pt-4 text-gray-600 italic">~HTML, CSS</p>
+					<h3 class="text-sm pt-2 text-gray-600 font-semibold uppercase">STATS CARD</h3>
+				</div>
+				<div class="lg:h-fit card-portfolio transition duration-500 p-3 shadow-xl shadow-transparent hover:shadow-gray-300 bg-white cursor-pointer">
+					<div class="relative max-h-32 md:max-h-60 h-full">
+						<div class="cover-img w-full h-full absolute bg-gray-800 bg-opacity-75 transition duration-500"></div>
+						<img src={imgFm2.src} alt="imgFm2" class="w-full h-full object-cover object-top">
+					</div>
+					<p class="text-xs pt-4 text-gray-600 italic">~HTML, CSS</p>
+					<h3 class="text-sm pt-2 text-gray-600 font-semibold uppercase">3-COLUMN CARD</h3>
+				</div>
+				<div class="lg:h-fit card-portfolio transition duration-500 p-3 shadow-xl shadow-transparent hover:shadow-gray-300 bg-white cursor-pointer">
+					<div class="relative max-h-32 md:max-h-60 h-full">
+						<div class="cover-img w-full h-full absolute bg-gray-800 bg-opacity-75 transition duration-500"></div>
+						<img src={imgFm3.src} alt="imgFm3" class="w-full h-full object-cover object-top">
+					</div>
+					<p class="text-xs pt-4 text-gray-600 italic">~HTML, CSS</p>
+					<h3 class="text-sm pt-2 text-gray-600 font-semibold uppercase">PROFILE CARD</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.card-portfolio:hover .cover-img {
+		opacity: 0;
+	}
+</style>

@@ -1,0 +1,60 @@
+---
+import { fade } from 'astro:transitions';
+import Layout from '../layouts/Layout.astro';
+
+//ASSETS
+import iconDeveloper from '../assets/img/programador.svg'
+import iconCat from '../assets/img/pixel-cat.gif'
+---
+
+<Layout title='Portafolio' description='Esmith Alama Sanchez'>
+	<section class="w-full flex flex-col md:flex-row md:items-start mx-auto space-x-0 lg:space-x-24 flex-initial pr-0 md:pr-24" transition:animate={fade({duration: "2.5s"})}>
+		<div class="static md:sticky top-0 md:top-16 w-24 flex flex-row md:flex-col md:justify-center items-center md:flex-wrap">
+			<h2 class="flex justify-center items-center pr-5 md:pr-0 w-16 h-10 sm:w-16 sm:h-16 md:w-24 md:h-24 text-3xl sm:text-5xl md:text-7xl text-gray-800 border-r-2 border-gray-600 md:border-r-0 md:border-transparent">05</h2>
+			<span class="hidden md:inline-block md:border-t-2 border-gray-600 w-16"></span>
+			<span class="hidden md:inline-block border-l-2 border-gray-600 h-24 mt-5 mb-10"></span>
+			<p class="relative md:-rotate-90 ml-5 sm:ml-10 md:ml-0">
+				<span class="relative z-10 text-xl md:text-base uppercase tracking-widest md:font-semibold text-gray-800">Blog</span>
+				<span class="mt-4 md:mt-0 absolute left-0 z-0 px-10 md:px-8 -ml-1 w-full h-3 bg-blue-400 inline-block"></span>
+			</p>
+		</div>
+		<div class="relative bg-gray-100 h-fit mt-8 sm:mt-14 md:mt-0 w-full p-10 py-32">
+			<div class="z-50 absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-white flex justify-center items-center flex-col">
+				<div class="relative w-24 md:w-36">
+					<img src={iconDeveloper.src} alt="iconDeveloper" class="opacity-75">
+					<div class="absolute left-0 bottom-0 w-20 md:w-32">
+						<img src={iconCat.src} alt="iconDeveloper" class="-ml-14 md:-ml-20 mt-5">
+					</div>
+				</div>				
+				<h3 class="text-gray-500 text-lg mt-7">En construcción . . .</h3>
+			</div>
+			<h1 class="text-4xl sm:text-5xl md:text-6xl text-gray-900">Blog</h1>
+			<p class="text-xs mt-8 text-gray-600 italic">~Ve por un café y aprendamos ^^</p>
+			<div class="grid md:grid-cols-1 lg:grid-cols-2 gap-7 mt-5 hidden">
+				<div class="card-portfolio transition duration-500 p-4 shadow-xl shadow-transparent hover:shadow-gray-300 bg-white cursor-pointer">
+					<div class="relative max-h-32 md:max-h-48 h-full">
+						<div class="cover-img w-full h-full absolute bg-gray-800 bg-opacity-75 transition duration-500"></div>
+						<img src="https://cdn.dribbble.com/users/1319204/screenshots/20034552/media/ae7d1becbc6987d1787c7468f42e20af.png?resize=400x300&vertical=center" alt="" class="w-full h-full object-cover object-center ">
+					</div>
+					<p class="text-xs pt-4 text-gray-600 italic">~HTML, CSS</p>
+					<h3 class="text-base pt-4 text-gray-600 font-semibold">Post 1</h3>
+				</div>
+				<div class="card-portfolio transition duration-500 p-4 shadow-xl shadow-transparent hover:shadow-gray-300 bg-white cursor-pointer">
+					<div class="relative max-h-32 md:max-h-48 h-full">
+						<div class="cover-img w-full h-full absolute bg-gray-800 bg-opacity-75 transition duration-500"></div>
+						<img src="https://cdn.dribbble.com/users/1319204/screenshots/20034552/media/ae7d1becbc6987d1787c7468f42e20af.png?resize=400x300&vertical=center" alt="" class="w-full h-full object-cover object-center ">
+					</div>
+					<p class="text-xs pt-4 text-gray-600 italic">~HTML, CSS</p>
+					<h3 class="text-base pt-4 text-gray-600 font-semibold">Post 2</h3>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+</Layout>
+
+<style>
+	.card-portfolio:hover .cover-img {
+		opacity: 0;
+	}
+</style>
