@@ -33,14 +33,14 @@ const currentPath = Astro.url.pathname;
         </ul>
     </nav>
 </header>
-<style is:global>
+<style>
     nav[data-url-selected] a {
         background-color: rgb(255, 255, 255);
     }
     nav[data-url-selected='/'] a[href='/'],
-    nav[data-url-selected='/portfolio'] a[href='/portfolio'],
-    nav[data-url-selected='/about'] a[href='/about'],
-    nav[data-url-selected='/blog'] a[href='/blog'] {
+    nav[data-url-selected='/portfolio'] a[href*='/portfolio'],
+    nav[data-url-selected='/about'] a[href*='/about'],
+    nav[data-url-selected='/blog'] a[href*='/blog'] {
         background-color: rgb(204, 204, 204, .3);
     }
 </style>
