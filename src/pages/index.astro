@@ -1,6 +1,10 @@
 ---
 import { fade } from 'astro:transitions';
 import Layout from '../layouts/Layout.astro';
+import imgBudged from '../assets/img/1-budget.png';
+import imgNunawara from '../assets/img/2-nunawara.png';
+import imgCapuli from '../assets/img/3-capuli.png';
+import { Image } from 'astro:assets';
 ---
 
 <Layout title='Inicio' description='Esmith Alama Sanchez'>
@@ -24,26 +28,18 @@ import Layout from '../layouts/Layout.astro';
 			
 			<p class="text-xs mt-14 text-gray-600 italic">~Proyectos</p>
 			<div class="flex mt-2 space-x-5">
-				<div class="w-40 h-40 relative">
+				<div class="w-40 h-32 sm:h-40 relative">
 					<div class="w-full h-full absolute bg-gray-800 bg-opacity-75 cursor-pointer hover:bg-opacity-20 transition duration-200"></div>
-					<img src="https://cdn.dribbble.com/users/1319204/screenshots/20034552/media/ae7d1becbc6987d1787c7468f42e20af.png?resize=400x300&vertical=center" alt="" class="w-full h-full object-cover object-center ">
+					<Image src={imgBudged} alt="imgBudged" class="w-full h-full object-cover object-center ">
 				</div>			
-				<div class="w-40 h-40 relative">
+				<div class="w-40 h-32 sm:h-40 relative">
 					<div class="w-full h-full absolute bg-gray-800 bg-opacity-75 cursor-pointer hover:bg-opacity-20 transition duration-200"></div>
-					<img src="https://cdn.dribbble.com/users/1068908/screenshots/3173609/dribbble.png?resize=450x338&vertical=center" alt="" class="w-full h-full object-cover object-center ">
+					<Image src={imgNunawara} alt="imgNunawara" class="w-full h-full object-cover object-center ">
 				</div>
-				<div class="w-40 h-40 relative">
+				<div class="w-40 h-32 sm:h-40 relative hidden sm:block">
 					<div class="w-full h-full absolute bg-gray-800 bg-opacity-75 cursor-pointer hover:bg-opacity-20 transition duration-200"></div>
-					<img src="https://cdn.dribbble.com/users/2387396/screenshots/4860045/media/259fcc84dc1b3302ce3492ee97d5e5f2.png?resize=400x300&vertical=center" alt="" class="w-full h-full object-cover object-center ">
+					<Image src={imgCapuli} alt="imgCapuli" class="w-full h-full object-cover object-center ">
 				</div>
-				<!-- <div class="w-40 h-40 relative">
-					<div class="w-full h-full absolute bg-gray-800 bg-opacity-75 cursor-pointer hover:bg-opacity-20 transition duration-200"></div>
-					<img src="https://cdn.dribbble.com/users/1319204/screenshots/20034552/media/ae7d1becbc6987d1787c7468f42e20af.png?resize=400x300&vertical=center" alt="" class="w-full h-full object-cover object-center ">
-				</div>				
-				<div class="w-40 h-40 relative">
-					<div class="w-full h-full absolute bg-gray-800 bg-opacity-75 cursor-pointer hover:bg-opacity-20 transition duration-200"></div>
-					<img src="https://cdn.dribbble.com/users/1978679/screenshots/5736782/media/1502571ecbd9ae93347c3933c6f351d1.png?resize=1000x750&vertical=center" alt="" class="w-full h-full object-cover object-center ">
-				</div> -->
 			</div>
 		</div>
 	</section>
