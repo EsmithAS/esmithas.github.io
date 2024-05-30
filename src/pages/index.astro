@@ -30,15 +30,15 @@ import { Image } from 'astro:assets';
 			<div class="flex mt-2 space-x-5">
 				<div class="w-40 h-32 sm:h-40 relative">
 					<div class="w-full h-full absolute bg-gray-800 bg-opacity-75 cursor-pointer hover:bg-opacity-20 transition duration-200"></div>
-					<Image src={imgBudged} alt="imgBudged" class="w-full h-full object-cover object-center ">
+					<Image src={imgBudged} alt="imgBudged" class="w-full h-full object-cover object-center " loading='lazy' />
 				</div>			
 				<div class="w-40 h-32 sm:h-40 relative">
 					<div class="w-full h-full absolute bg-gray-800 bg-opacity-75 cursor-pointer hover:bg-opacity-20 transition duration-200"></div>
-					<Image src={imgNunawara} alt="imgNunawara" class="w-full h-full object-cover object-center ">
+					<Image src={imgNunawara} alt="imgNunawara" class="w-full h-full object-cover object-center " loading='lazy' />
 				</div>
 				<div class="w-40 h-32 sm:h-40 relative hidden sm:block">
 					<div class="w-full h-full absolute bg-gray-800 bg-opacity-75 cursor-pointer hover:bg-opacity-20 transition duration-200"></div>
-					<Image src={imgCapuli} alt="imgCapuli" class="w-full h-full object-cover object-center ">
+					<Image src={imgCapuli} alt="imgCapuli" class="w-full h-full object-cover object-center " loading='lazy' />
 				</div>
 			</div>
 		</div>
